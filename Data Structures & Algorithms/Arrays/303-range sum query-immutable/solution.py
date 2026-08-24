@@ -10,7 +10,7 @@ class NumArray(object):
         return self.prefix[right+1]-self.prefix[left]
         
         
-
+#immutable means num array remian unchanged for every query
 
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
