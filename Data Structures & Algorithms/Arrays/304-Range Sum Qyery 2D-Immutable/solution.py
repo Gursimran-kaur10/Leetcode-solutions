@@ -9,7 +9,7 @@ class NumMatrix:
         for i in range(1, rows + 1):
             for j in range(1, cols + 1):
                 self.prefix[i][j] = (
-                    matrix[i-1][j-1]
+                    matrix[i-1][j-1] 
                     + self.prefix[i-1][j]
                     + self.prefix[i][j-1]
                     - self.prefix[i-1][j-1]
