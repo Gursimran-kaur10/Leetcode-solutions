@@ -1,0 +1,18 @@
+class Solution(object):
+    def countStudents(self, students, sandwiches):
+        count=[0,0]
+        for i in students:
+            count[i]+=1
+        for i in sandwiches:
+            if count[i]==0:
+                break
+            else:
+                count[i]-=1
+        return count[0]+count[1]
+
+'''2nd approach is use queue take attempts=0 count=0
+compare both students and sanwiches top if same then pop both and attempt=0 and increasing count by 1
+if not then append in students by pop students[0]
+if attempts==len(students) then break
+return len(students)-count'''
+
