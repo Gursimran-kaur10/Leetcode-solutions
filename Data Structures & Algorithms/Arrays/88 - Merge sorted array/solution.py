@@ -26,3 +26,28 @@ class Solution(object):
 
         for i in range(m + n):
             nums1[i] = arr[i]
+
+'''
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        i = m - 1          # Last actual element of nums1
+        j = n - 1          # Last element of nums2
+        k = m + n - 1      # Last position of nums1
+
+        # Compare from the end and place the larger element
+        while i >= 0 and j >= 0:
+            if nums1[i] > nums2[j]:
+                nums1[k] = nums1[i]
+                i -= 1
+            else:
+                nums1[k] = nums2[j]
+                j -= 1
+
+            k -= 1
+
+        # If nums2 still has elements, copy them
+        while j >= 0:
+            nums1[k] = nums2[j]
+            j -= 1
+            k -= 1
+'''
