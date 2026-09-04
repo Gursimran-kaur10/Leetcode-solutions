@@ -1,5 +1,6 @@
 class Solution(object):
     def numSubseq(self, nums, target):
+        nums.sort()
         left=0
         right=len(nums)-1
         ans=0
