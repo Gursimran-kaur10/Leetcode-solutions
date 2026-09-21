@@ -1,0 +1,16 @@
+class Solution(object):
+    def minEatingSpeed(self, piles, h):
+        left=0
+        right=max(piles)
+
+        while left<=right:
+            k=(left+right)//2
+            hours=0
+            for pile in piles:
+                hours+=(pile+k-1)//k
+            if hours<=h:
+                right=k-1
+            else:
+                left=k+1
+        return left
+        
