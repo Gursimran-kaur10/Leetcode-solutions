@@ -1,6 +1,6 @@
 class Solution(object):
     def minEatingSpeed(self, piles, h):
-        left=0
+        left=1
         right=max(piles)
 
         while left<=right:
