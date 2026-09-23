@@ -9,6 +9,6 @@ class Solution(object):
         for i in freq.values():
             if i%2!=0:
                 return False
-        return True
+        return True 
 
         
